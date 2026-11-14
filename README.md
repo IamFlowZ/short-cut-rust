@@ -4,7 +4,7 @@ you can accomplish the same and source it with two lines of shell. albeit you'll
 
 ```bash
 sc() {
-  echo "export $1=$(pwd)" >> $HOME/.zshrc
+  echo "export $1="$(pwd)"" >> $HOME/.zshrc
   source "${functions_source[$0]}"
 }
 ```
